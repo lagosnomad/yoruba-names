@@ -1,31 +1,39 @@
 {
-    "name": "yoruba-names",
-    "version": "1.1.0",
-    "description": "Get random yoruba names",
-    "main": "src/index.js",
-    "scripts": {
-        "test": "mocha tests/index.test.js -w"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/mczlatan/yoruba-names.git"
-    },
-    "keywords": [
-        "random",
-        "yoruba",
-        "names"
-    ],
-    "author": "mczlatan <bournethesonofthegun@gmail.com> (https://mczlatan.github.io/)",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/mczlatan/yoruba-names/issues"
-    },
-    "homepage": "https://github.com/mczlatan/yoruba-names#readme",
-    "dependencies": {
-        "unique-random-array": "1.0.0"
-    },
-    "devDependencies": {
-        "chai": "4.1.2",
-        "mocha": "4.0.1"
-    }
+  "name": "yoruba-names",
+  "version": "0.0.0-development",
+  "description": "Get random yoruba names",
+  "main": "src/index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "mocha tests/index.test.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mczlatan/yoruba-names.git"
+  },
+  "keywords": [
+    "random",
+    "yoruba",
+    "names"
+  ],
+  "author": "mczlatan <bournethesonofthegun@gmail.com> (https://mczlatan.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mczlatan/yoruba-names/issues"
+  },
+  "homepage": "https://github.com/mczlatan/yoruba-names#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "mocha": "4.0.1",
+    "semantic-release": "^8.0.3"
+  },
+  "czConfig":{
+   "path": "node_modules/cz-conventional-changelog"
+   }
 }
