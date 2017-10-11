@@ -5,8 +5,10 @@
     "main": "src/index.js",
     "scripts": {
         "commit": "git-cz",
+        "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+        "report-coverage": "cat coverage/lcov.info | codecov",
         "test": "mocha tests/index.test.js -w",
-        "test:single": "mocha tests/index.test.js",
+        "test:single": "istanbul cover -x tests/*.js _mocha -- -R spec tests/index.test.js",
         "semantic-release": "semantic-release pre && npm publish && semantic-release post"
     },
     "repository": {
@@ -26,10 +28,12 @@
     "homepage": "https://github.com/mczlatan/yoruba-names#readme",
     "dependencies": {
         "ghooks": "2.0.0",
+        "istanbul": "0.4.5",
         "unique-random-array": "1.0.0"
     },
     "devDependencies": {
         "chai": "4.1.2",
+        "codecov.io": "0.1.6",
         "commitizen": "^2.9.6",
         "cz-conventional-changelog": "^2.0.0",
         "mocha": "4.0.1",
@@ -40,7 +44,7 @@
     },
     "config": {
         "ghooks": {
-            "pre-commit": "npm run test:single"
+            "pre-commit": "npm run test:single && npm run check-coverage"
         }
     }
 }

@@ -12,8 +12,10 @@ before_script:
   - npm prune
 script:
   - npm run test:single
+  - npm run check-coverage
 after_success:
   - npm run semantic-release
+  - npm run report-coverage
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
