@@ -25,6 +25,7 @@
     },
     "homepage": "https://github.com/mczlatan/yoruba-names#readme",
     "dependencies": {
+        "ghooks": "2.0.0",
         "unique-random-array": "1.0.0"
     },
     "devDependencies": {
@@ -36,5 +37,10 @@
     },
     "czConfig": {
         "path": "node_modules/cz-conventional-changelog"
+    },
+    "config": {
+        "ghooks": {
+            "pre-commit": "npm run test:single"
+        }
     }
 }

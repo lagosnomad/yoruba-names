@@ -19,5 +19,11 @@ describe('yoruba-names', function() {
             var randomName = yorubaNames.random();
             expect(yorubaNames.all).to.include(randomName);
         });
+        it('should return a random number of names from the array', function() {
+            var randomNames = yorubaNames.random(3);
+            expect(randomNames).to.be.an('array');
+            expect(randomNames).to.have.length(3);
+            expect(yorubaNames.all).to.include(randomNames[0]);
+        });
     });
 });
