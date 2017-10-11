@@ -1,6 +1,11 @@
 # yoruba-names
 
 Get a random yoruba name
+[![travis build](https://img.shields.io/travis/mczlatan/yoruba-names.svg)](https://travis-ci.org/mczlatan/yoruba-names)
+[![codecov coverage](https://img.shields.io/codecov/c/github/mczlatan/yoruba-names.svg)](https://codecov.io/gh/mczlatan/yoruba-names)
+[![version](https://img.shields.io/npm/v/yoruba-names.svg)](https://www.npmjs.com/package/yoruba-names)
+[![downloads](https://img.shields.io/npm/dt/yoruba-names.svg)](http://npm-stats.com/~packages/yoruba-names)
+[![MIT license](https://img.shields.io/npm/l/yoruba-names.svg)](https://opensource.org/licenses/MIT)
 
 ## How to install
 
