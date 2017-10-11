@@ -1,5 +1,6 @@
-var expect = require('chai').expect;
-var yorubaNames = require('../src/index');
+import { expect } from 'chai';
+import yorubaNames from '../src/index';
+
 
 describe('yoruba-names', function() {
     describe('all', function() {

@@ -1,5 +1,6 @@
-var uniqueRandomArray = require('unique-random-array');
-var yorubaNames = require('./yoruba-names.json');
+import uniqueRandomArray from 'unique-random-array';
+import yorubaNames from './yoruba-names.json';
+
 var getRandomName = uniqueRandomArray(yorubaNames);
 
 module.exports = {
@@ -12,7 +13,7 @@ function random(number) {
         return getRandomName();
     } else {
         var randomNames = [];
-        for (i = 0; i < number; i++) {
+        for (var i = 0; i < number; i++) {
             randomNames.push(getRandomName());
         }
         return randomNames;
