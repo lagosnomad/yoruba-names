@@ -41,7 +41,7 @@ See the examples/example.html file
 <html>
 
 <head>
-    <script src="https://unpkg.com/yoruba-names@2.2.0/dist/index.umd.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/yoruba-names@2.2.0/dist/index.umd.min.js" type="text/javascript"></script>
 </head>
 
 <body>
