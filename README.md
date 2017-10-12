@@ -16,7 +16,7 @@ Library is available on [NPM](https://www.npmjs.com/package/yoruba-names)
 npm install --save yoruba-names
 ```
 
-## Usage
+## Usage in NodeJS
 
 See the examples/example.js file
 
@@ -31,4 +31,23 @@ console.log(yorubaNames.random(2));
 
 // Get a random Yoruba fullname
 console.log(yorubaNames.random() + " " + yorubaNames.random());
+```
+
+## Usage in Browser
+
+See the examples/example.html file
+
+```html
+<html>
+
+<head>
+    <script src="https://unpkg.com/yoruba-names@2.2.0/dist/index.umd.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <button onclick="document.write(yorubaNames.random())">Get a random name</button>
+    <button onclick="document.write(yorubaNames.random(4))">Get a random number of names</button>
+</body>
+
+</html>
 ```
