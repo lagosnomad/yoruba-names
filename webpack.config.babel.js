@@ -1,0 +1,22 @@
+import { join } from 'path';
+
+const include = join(__dirname, 'src')
+
+export default {
+    entry: './src/index',
+    output: {
+        path: join(__dirname, 'dist'),
+        libraryTarget: 'umd',
+        library: 'yorubaNames'
+    },
+    devtool: 'source-map',
+    resolveLoader: {
+        moduleExtensions: ['-loader']
+    },
+    module: {
+        loaders: [
+            { test: /\.js$/, loader: 'babel', include },
+            { test: /\.json$/, 'loader': 'json', include }
+        ]
+    }
+};
