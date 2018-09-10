@@ -19,3 +19,21 @@ function random(number) {
         return randomNames;
     }
 }
+
+function Royalname(number) {
+    if (number == undefined) {
+        if (getRandomName.match(/Adé/i)) {
+            return getRandomName();
+        }
+
+    } else {
+        var randomNames = [];
+        for (var i = 0; i <= number; i++) {
+            if (getRandomName.match(/Adé/i)) {
+                randomNames.push(getRandomName());
+            }
+
+        }
+        return randomNames;
+    }
+}

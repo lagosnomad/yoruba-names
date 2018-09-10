@@ -1,6 +1,6 @@
 {
     "name": "yoruba-names",
-    "version": "0.0.0-development",
+    "version": "0.0.1-development",
     "description": "Get random yoruba names",
     "main": "dist/index.js",
     "scripts": {
