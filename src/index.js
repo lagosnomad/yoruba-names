@@ -5,7 +5,9 @@ var getRandomName = uniqueRandomArray(yorubaNames);
 
 module.exports = {
     all: yorubaNames,
-    random: random
+    random: random,
+    Royalname: Royalname
+
 };
 
 function random(number) {
@@ -21,19 +23,25 @@ function random(number) {
 }
 
 function Royalname(number) {
+    var arr = [];
     if (number == undefined) {
-        if (getRandomName.match(/Adé/i)) {
-            return getRandomName();
+        for (i = 0; i < yorubaNames.length; i++) {
+            if (yorubaNames[i].match(/Adé/i)) {
+
+                arr.push(yorubaNames[i]);
+
+            }
         }
+        return arr[0];
 
     } else {
         var randomNames = [];
-        for (var i = 0; i <= number; i++) {
-            if (getRandomName.match(/Adé/i)) {
-                randomNames.push(getRandomName());
+        for (var i = 0; i < yorubaNames.length; i++) {
+            if (yorubaNames[i].match(/Adé/i)) {
+                randomNames.push(yorubaNames[i]);
             }
 
         }
-        return randomNames;
+        return randomNames.slice(-number);
     }
 }

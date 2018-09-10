@@ -27,4 +27,17 @@ describe('yoruba-names', function() {
             expect(yorubaNames.all).to.include(randomNames[0]);
         });
     });
+    describe('Royalname', function() {
+        it('should return a random royal name', function() {
+            var randomName = yorubaNames.Royalname();
+            expect(yorubaNames.all).to.include(randomName);
+        });
+        it('should return a random number of royal names from the array', function() {
+            var randomNames = yorubaNames.Royalname(3);
+            expect(randomNames).to.be.an('array');
+            expect(randomNames).to.have.length(3);
+            expect(yorubaNames.all).to.include(randomNames[0]);
+        });
+
+    });
 });
