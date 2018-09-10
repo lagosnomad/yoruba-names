@@ -32,7 +32,7 @@ function Royalname(number) {
 
             }
         }
-        return arr[0];
+        return arr[Math.floor(Math.random() * arr.length)];
 
     } else {
         var randomNames = [];
@@ -42,6 +42,7 @@ function Royalname(number) {
             }
 
         }
-        return randomNames.slice(-number);
+        var select = randomNames.sort(() => .4 - Math.random())
+        return select.slice(0, number)
     }
 }
