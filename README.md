@@ -31,6 +31,10 @@ console.log(yorubaNames.random(2));
 
 // Get a random Yoruba fullname
 console.log(yorubaNames.random() + " " + yorubaNames.random());
+
+
+// Get a random Royal Yoruba name
+console.log(yorubaNames.Royalname());
 ```
 
 ## Usage in Browser
@@ -47,6 +51,7 @@ See the examples/example.html file
 <body>
     <button onclick="document.write(yorubaNames.random())">Get a random name</button>
     <button onclick="document.write(yorubaNames.random(4))">Get a random number of names</button>
+        <button onclick="document.write(yorubaNames.Royalname())">Get a Royal names</button>
 </body>
 
 </html>
